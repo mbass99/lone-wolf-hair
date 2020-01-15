@@ -5,7 +5,7 @@
 
 /*development hack*/
 * {
-    /*	outline: solid .1rem #ddd;*/
+  /*	outline: solid .1rem #ddd;*/
 }
 
 html,
@@ -89,12 +89,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -109,126 +109,139 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*end meyer reset*/
 
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    color: #0e0b06;
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+  color: #0e0b06;
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* TEXT */
 
-h1{
-    font-family: font-family: 'UnifrakturCook', cursive;
-    font-size: 4.4rem;
-    font-weight: ;
-    text-transform: ;
+h1 {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 4.4rem;
+  font-weight: ;
+  text-transform: ;
 }
 
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3.2rem;
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.2rem;
 }
 
-h3{
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 2.4rem;
-    
+h3 {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 2.4rem;
 }
 
-h4{}
+h4 {
+}
 
-h5{}
+h5 {
+}
 
-h6{}
+h6 {
+}
 
-p{
-    color:  #4f4f4f;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.5rem;
-    margin: 0 auto;
-    max-width: 80rem;
-    text-align: left;
+p {
+  color: #4f4f4f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  text-align: left;
 }
 
 /* images */
 
-img{
-    height: auto;
-    max-width: 100%;
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 /* hero */
 
-header{
-    background-image: url(../images/16x9-full-width.png);
+header {
+  background-image: url(../images/16x9-full-width.png);
 }
 
 /* work section */
-.work-section{
-    padding: 1rem;
+.work-section {
+  margin: 5rem 1rem;
 }
 
-.women-section{
-    background-image: url(../images/16x9-with-margin.png);
+.women-section {
+  background-image: url(../images/16x9-with-margin.png);
+  margin: 1.5rem 0;
 }
 
-.men-section{
-    background-image: url(../images/16x9-with-margin.png);
+.men-section {
+  background-image: url(../images/16x9-with-margin.png);
+  margin: 1.5rem 0;
 }
 
-.testimonial-section{
-    background-image: url(../images/16x9-with-margin.png);
+.testimonial-section {
+  background-image: url(../images/16x9-with-margin.png);
+  margin: 1.5rem 0;
 }
 
-.tips-section{
-    background-image: url(../images/16x9-with-margin.png);
+.tips-section {
+  background-image: url(../images/16x9-with-margin.png);
+  margin: 1.5rem 0;
 }
 
-.gallery-section{
-    background-image: url(../images/16x9-with-margin.png);
+.gallery-section {
+  background-image: url(../images/16x9-with-margin.png);
+  margin: 1.5rem 0;
 }
 
-.landing-image-headers{
-    text-align: center;
+.landing-image-headers {
+  text-align: center;
 }
 
-
+.women-section,
+.men-section,
+.testimonial-section,
+.tips-section,
+.gallery-section {
+  padding: 2.5rem 0;
+}
