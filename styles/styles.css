@@ -368,39 +368,49 @@ footer {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-  .flex-text,
-  .flex-pictures {
-    width: 50%;
+  .header {
   }
 
-  .haircuts {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+  .service-explanation,
+  .prices {
+    padding: 2rem;
   }
 
-  .coloring {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
+  .haircuts,
+  .perms,
+  .barbering {
+    display: grid;
+    grid-template-areas:
+      "type pictures"
+      "explanation pictures"
+      "cost pictures"
+      "blank-four pictures";
+    grid-template-columns: 1fr 1fr;
   }
 
-  .perms {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-
+  .coloring,
   .ala-carte {
     align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-areas:
+      "pictures type"
+      "pictures explanation"
+      "pictures cost"
+      "pictures blank-four";
+    grid-template-columns: 1fr 1fr;
   }
 
-  .barbering {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+  .services-headers {
+    grid-area: type;
+  }
+  .service-explanation {
+    grid-area: explanation;
+  }
+  .prices {
+    grid-area: cost;
+  }
+  .four-x-four-grid {
+    grid-area: pictures;
   }
 }
 
