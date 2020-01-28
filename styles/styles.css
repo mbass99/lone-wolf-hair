@@ -312,6 +312,14 @@ header li {
   margin: 3rem 0;
 }
 
+.three-x-three-grid {
+  background-color: #181818;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 3rem 0;
+}
+
 .one-by-one {
   grid-column: 1;
   grid-row: 1;
@@ -465,7 +473,8 @@ footer {
   .prices {
     grid-area: cost;
   }
-  .four-x-four-grid {
+  .four-x-four-grid,
+  .three-x-three-grid {
     grid-area: pictures;
   }
 
