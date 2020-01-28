@@ -203,10 +203,6 @@ p {
   text-align: left;
 }
 
-section {
-  padding: 0 0 3rem;
-}
-
 /* images */
 
 img {
@@ -223,15 +219,23 @@ header {
 
 .nav-flex {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 3rem 0;
+  overflow: hidden;
+  background-color: #181818;
+  text-align: center;
 }
 
 header li {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  padding: 0 3rem;
+  list-style-type: none;
+  padding: 0 2rem;
+  text-decoration: none;
+  list-style-type: none;
 }
+
+/* DROPDOWN removed */
 
 .hero-info {
   background-image: url(/images/matt-artz-SmocKx2oDZc-unsplash.jpg);
@@ -242,12 +246,12 @@ header li {
 }
 
 .hero-info h1 {
-  padding: 3rem;
+  padding: 3rem 2rem;
 }
 
 .hero-bottom-info {
   bottom: 0;
-  padding: 2rem 3rem;
+  padding: 2rem;
   position: absolute;
 }
 
@@ -256,11 +260,33 @@ header li {
   padding: 2rem 0;
 }
 
+.hours {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 3rem 0;
+}
+
 .hero-phone-job p {
   color: #d9b252;
 }
 
 /* work section */
+
+.haircuts,
+.coloring,
+.perms,
+.ala-carte,
+.barbering {
+  padding: 0 0 3rem;
+}
+
+.haircuts,
+.coloring,
+.perms,
+.ala-carte {
+  border-bottom: 2px solid #d9b252;
+}
 
 .work-section h2 {
   text-align: center;
@@ -327,6 +353,7 @@ header li {
 
 .prices {
   text-align: center;
+  padding: 2rem 0;
 }
 
 /* USE THIS ON LARGER DEVICES */
@@ -368,7 +395,37 @@ footer {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-  .header {
+  .hero-info h1 {
+    padding-top: 10rem;
+  }
+
+  .nav-flex {
+    max-width: 30rem;
+    padding-left: 40rem;
+  }
+
+  .hero-bottom-info {
+    padding-bottom: 10rem;
+  }
+
+  .work-section {
+    padding: 0 2rem;
+  }
+
+  .services-headers {
+    margin-top: 2rem;
+  }
+
+  .haircuts,
+  .coloring,
+  .perms,
+  .ala-carte,
+  .barbering {
+    /* padding: 0; */
+  }
+
+  .four-x-four-grid {
+    /* margin: 1rem 0; */
   }
 
   .service-explanation,
@@ -383,8 +440,7 @@ footer {
     grid-template-areas:
       "type pictures"
       "explanation pictures"
-      "cost pictures"
-      "blank-four pictures";
+      "cost pictures";
     grid-template-columns: 1fr 1fr;
   }
 
@@ -395,8 +451,7 @@ footer {
     grid-template-areas:
       "pictures type"
       "pictures explanation"
-      "pictures cost"
-      "pictures blank-four";
+      "pictures cost";
     grid-template-columns: 1fr 1fr;
   }
 
@@ -411,6 +466,28 @@ footer {
   }
   .four-x-four-grid {
     grid-area: pictures;
+  }
+
+  .haircuts,
+  .services-headers {
+    /* margin-top: 2rem; */
+  }
+
+  .coloring,
+  .services-headers {
+    /* margin-top: 0;
+    padding-top: 1rem; */
+  }
+
+  .haircuts,
+  .prices {
+    margin-bottom: 1rem;
+  }
+
+  .barbering,
+  .prices {
+    margin: 0;
+    padding: 0;
   }
 }
 
