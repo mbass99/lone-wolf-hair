@@ -360,9 +360,16 @@ header li {
   grid-row: 4;
 }
 
+.services-explanation {
+  padding-top: 2rem;
+}
+
 .prices {
   text-align: center;
-  padding: 2rem 0;
+}
+
+.price-alignment {
+  padding-top: 2rem;
 }
 
 /* USE THIS ON LARGER DEVICES */
@@ -422,24 +429,7 @@ footer {
   }
 
   .services-headers {
-    margin-top: 2rem;
-  }
-
-  .haircuts,
-  .coloring,
-  .perms,
-  .ala-carte,
-  .barbering {
-    /* padding: 0; */
-  }
-
-  .four-x-four-grid {
-    /* margin: 1rem 0; */
-  }
-
-  .service-explanation,
-  .prices {
-    padding: 2rem;
+    padding-top: 3rem;
   }
 
   .haircuts,
@@ -467,26 +457,18 @@ footer {
   .services-headers {
     grid-area: type;
   }
-  .service-explanation {
+
+  .services-explanation {
     grid-area: explanation;
   }
+
   .prices {
     grid-area: cost;
   }
+
   .four-x-four-grid,
   .three-x-three-grid {
     grid-area: pictures;
-  }
-
-  .haircuts,
-  .services-headers {
-    /* margin-top: 2rem; */
-  }
-
-  .coloring,
-  .services-headers {
-    /* margin-top: 0;
-    padding-top: 1rem; */
   }
 
   .haircuts,
@@ -503,6 +485,52 @@ footer {
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
+  .work-section {
+    margin: auto;
+    width: 80%;
+  }
+
+  .haircuts .services-headers {
+    padding-top: 12rem;
+  }
+
+  .haircuts .prices {
+    padding-bottom: 12rem;
+  }
+
+  .coloring .services-headers {
+    padding-top: 15rem;
+  }
+
+  .coloring .prices {
+    padding-bottom: 9rem;
+  }
+
+  .perms .services-headers {
+    padding-top: 12rem;
+  }
+  .perms .prices {
+    padding-bottom: 12rem;
+  }
+
+  .ala-carte .services-headers {
+    padding-top: 12rem;
+  }
+
+  .ala-carte .prices {
+    padding-bottom: 12rem;
+  }
+
+  .barbering .services-headers {
+    padding-top: 12rem;
+  }
+
+  .barbering .prices {
+    padding-bottom: 12rem;
+  }
+
+  /* dave faunce name */
+
   .twelve-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
